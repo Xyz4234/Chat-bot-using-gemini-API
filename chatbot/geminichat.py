@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure Gemini API key (store it in Streamlit secrets like before)
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+genai.configure(api_key="AIzaSyDDG-zAbk3ef5fn5ECAQ-jCRkNCF_Qtyao")
 
 st.title("Streaming Gemini Chat Clone 😉🔭💬")
 
@@ -34,3 +34,4 @@ if prompt := st.chat_input("Wassup write smth here"):
         )
 
     st.session_state.messages.append({"role": "assistant", "content": response})
+
